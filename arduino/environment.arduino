@@ -1,0 +1,30 @@
+Environment
+
+Require:
+
+- Arduino IDE : apt-get install arduino
+
+1. First download Openmolo Libraries:
+
+svn svn://svn.backupnet.com.ar/OpenMolo/trunk
+
+2. Bind Openmolo libraries with arduino
+
+cd /usr/share/arduino/libraries/
+
+sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/CMEA/
+sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/Time
+sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/Entradas
+sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/Salidas
+sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/Cron
+sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/UIPEthernet
+
+3. Install
+i. open arduino
+$arduino
+
+ii. open file Prueba_Socket.pde
+file -> open -> arol/arduino/Prueba_Socket/Prueba_Socket.pde
+
+iii. Verify & Upload
+
