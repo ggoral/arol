@@ -6,7 +6,7 @@ Api Restful for Openmolo Libraries
 
 ##Map##
 
-web <-> arol server <-> openmolo libraries 
+web <-> arol server <-> arduino <-> openmolo libraries 
 
 ##Alternative##
 
