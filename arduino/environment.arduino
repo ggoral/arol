@@ -4,13 +4,24 @@ Require:
 
 - Arduino IDE : apt-get install arduino
 
-1. First download Openmolo Libraries:
+1. Download Openmolo Libraries:
 
-svn svn://svn.backupnet.com.ar/OpenMolo/trunk
+svn co svn://svn.backupnet.com.ar/OpenMolo/trunk
 
-2. Bind Openmolo libraries with arduino
+2. Download UIPEthernet
 
-cd /usr/share/arduino/libraries/
+$ git clone https://github.com/ntruchsess/arduino_uip UIPEthernet
+$ cd [path to Arduino distribution]/libraries
+
+* Ubuntu path
+$ cd /usr/share/arduino/libraries/
+
+3. Bind Openmolo & UIPEthernet libraries with arduino
+
+$ cd [path to Arduino distribution]/libraries
+
+*Ubuntu path
+$ cd /usr/share/arduino/libraries/
 
 sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/CMEA/
 sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/Time
@@ -21,7 +32,7 @@ sudo ln -s /home/ggoral/src/arduino/trunk/Librerias/UIPEthernet
 
 3. Install
 i. open arduino
-$arduino
+$ arduino
 
 ii. open file Prueba_Socket.pde
 file -> open -> arol/arduino/Prueba_Socket/Prueba_Socket.pde
